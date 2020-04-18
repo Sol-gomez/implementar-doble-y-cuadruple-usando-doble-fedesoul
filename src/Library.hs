@@ -27,22 +27,23 @@ data Auto = Auto {
   ultimoArreglo :: Fecha
 } deriving Show
 
-longitudEsSiete:: Patente -> Bool
+longitudEsSiete:: Patente -> Bool   -- Comprueba que la patente tenga 7 caracteres/digitos
 longitudEsSiete = (7 ==) . length
 
-ultimoEsCuatro:: Patente -> Bool
+ultimoEsCuatro:: Patente -> Bool    -- Comprueba que la patente finalice con 4
 ultimoEsCuatro = ('4'==).last
 
-perteneceAlRango:: Patente -> Bool
+perteneceAlRango:: Patente -> Bool  -- Comprueba que la patente este incluida en el rango pedido
 perteneceAlRango patente = patente>="DJA000" && patente<="NBZ999"
 --perteneceAlRango = ("NBZ999">=) && ("DJA000"<=)
 
-costoReparacion:: Patente -> Number
+costoReparacion:: Patente -> Number -- Calcula el costo de la reparacion en base a la patente del vehiculo
 costoReparacion patente | longitudEsSiete patente         = 12500
                         | not (perteneceAlRango patente)  = 15000
                         | ultimoEsCuatro patente          = 3000 * length patente
                         | otherwise                       = 20000
-{-
+
+{- Intento de simplificacion -eta conversion-
 costoReparacion:: Patente -> Number
 costoReparacion | longitudEsSiete       = 12500
                 | not.perteneceAlRango  = 15000
