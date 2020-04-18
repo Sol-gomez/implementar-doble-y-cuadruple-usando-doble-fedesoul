@@ -1,0 +1,32 @@
+Fede@F-EXO MINGW64 /d/GDRIVE/UTN/REPO/implementar-doble-y-cuadruple-usando-doble-fedesoul (master)
+$ stack test
+Stack has not been tested with GHC versions above 8.6, and using 8.8.2, this may fail
+Stack has not been tested with Cabal versions above 2.4, but version 3.0.1.0 was found, this may fail
+pdpK2106-0.1.0.0: unregistering (local file changes: src\Library.hs)
+pdpK2106> configure (lib + test)
+Configuring pdpK2106-0.1.0.0...
+pdpK2106> build (lib + test)
+Preprocessing library for pdpK2106-0.1.0.0..
+Building library for pdpK2106-0.1.0.0..
+[1 of 2] Compiling Library
+[2 of 2] Compiling Paths_pdpK2106
+Preprocessing test suite 'pdpK2106-test' for pdpK2106-0.1.0.0..
+Building test suite 'pdpK2106-test' for pdpK2106-0.1.0.0..
+Linking .stack-work\dist\29cc6475\build\pdpK2106-test\pdpK2106-test.exe ...
+pdpK2106> copy/register
+Installing library in D:\GDRIVE\UTN\REPO\implementar-doble-y-cuadruple-usando-doble-fedesoul\.stack-work\install\aef4c4ad\lib\x86_64-windows-ghc-8.8.2\pdpK2106-0.1.0.0-4GJYhYvqbC1KeQNKS1DP4U
+Registering library for pdpK2106-0.1.0.0..
+pdpK2106> test (suite: pdpK2106-test)
+
+
+Test costo de reparacion
+  Patente AT001LN
+  Patente DJV214
+  Patente DJV215
+  Paatente DFH029
+
+Finished in 0.0485 seconds
+4 examples, 0 failures
+
+pdpK2106> Test suite pdpK2106-test passed
+Completed 2 action(s).
